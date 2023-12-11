@@ -1,0 +1,26 @@
+body{
+
+    margin : 100px;
+}
+
+img{
+    width: 45%;
+    height: 500px;
+    border: 10px solid black;
+    border-radius: 500px;
+}
+
+.card{
+    display: flex;
+    background: rgb(184, 133, 15);
+   padding: 100px;
+   border: 10px dotted black    ;
+    /* justify-content: center; */
+}
+
+.card-details{
+    margin: auto;
+    font-size: 30px;
+    font-weight: sans-sarif;
+    color: rgb(0, 0, 0);
+}
