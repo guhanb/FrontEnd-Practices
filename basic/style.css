@@ -3,8 +3,8 @@ body{
     margin : 100px;
 }
 
-.image{
-    background-image: url(images/my_pic.jpg);
+#image{
+    /* background-image: url(images/my_pic.jpg); */
     background-size: cover;
     width: 45%;
     height: 500px;
@@ -12,11 +12,7 @@ body{
     border-radius: 500px;
 }
 
-.image:hover{
-    background-image: url(images/sec_pic.JPG);
-    background-size: cover;
 
-}
 .card{
     display: flex;
     flex-direction: column;

@@ -1,0 +1,29 @@
+<!DOCTYPE html5>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guhan Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <img id="image" src="images/my_pic.jpg"></img>
+      <div class="card-details">
+        <h1>Guhan B</h1>
+        <h3>Java Developer</h3>
+        <h5>Theni, Tamilnadu</h5>
+        <p id="dom">Welcome To All</p>
+        <button id="MyButton">Click Here</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    var temp = document.getElementById("image");
+    var myBut = document.getElementById("MyButton");
+    
+    // alert(temp.textContent)
+    myBut.addEventListener("click" , function(){
+      temp.src = "images/sec_pic.JPG"
+    });
+  </script>
+</html>
