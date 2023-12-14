@@ -1,0 +1,29 @@
+<h1>Guess The Number</h1>
+<input id="inputVal" type="text" placeholder="Enter the number">
+<button onclick="checkVal()">Check</button>
+<p id="point">Your Score : </p>
+
+<script>
+    
+     var enterValue = document.getElementById("inputVal")
+     var randomNum = Math.floor(Math.random() * 10)
+     var totalPoint = document.getElementById("point")
+   
+     var res = 10
+     function checkVal(){
+        if(enterValue.value == randomNum){
+        alert("You won and your point is" + res)
+        
+     }
+     else{
+        
+        res = res - 1
+        totalPoint.textContent = "Your Score : " + res
+      //   alert("You Loss "+ res)
+        
+     } 
+     }
+     
+
+
+</script>

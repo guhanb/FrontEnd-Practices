@@ -1,0 +1,68 @@
+<h1>Task 1</h1>
+<input type="text" placeholder="Enter your text" id="TextEntered" onkeyup="check()">
+<h1 id="CopyEnter"></h1>
+
+
+<!-- task 2 -->
+<h1>Task 2</h1>
+<button onclick="adding()">Add</button>
+<div id="textToAdd"></div>
+
+
+<!-- task 3 -->
+<h1>Task 3</h1>
+<h3 id ="Head1">Name</h3>
+<button  onclick="changeName(event)">Naruto</button>
+<button  onclick="changeName(event)">Hinata</button>
+<button  onclick="changeName(event)">Jiraiya</button>
+
+
+<!-- task 4 -->
+
+<h1>Task 4</h1>
+<h3 onclick="deleteItem(event)" >one</h3>
+<h3 onclick="deleteItem(event)">two</h3>
+<h3 onclick="deleteItem(event)">three</h3>
+
+<script>
+    //  task 1
+    var enterText = document.getElementById("TextEntered")
+    var outputText = document.getElementById("CopyEnter")
+
+    function check(){
+        outputText.textContent = enterText.value
+    }
+
+    // task 2
+    // append  -> function to add text or value
+    var textAdd = document.getElementById("textToAdd")
+
+    function adding(){
+        var listItem = document.createElement("h1")
+        listItem.textContent = "Guhan"
+        textAdd.append(listItem)
+    }
+
+    // task 3
+    // using object --> events - which helps in fetch the text or value  easily   
+
+    var headone = document.getElementById("Head1")
+
+    // function changeName(){
+    //     var innertext = document.getElementById("PressBtn").innerHTML
+    //     headone.textContent = innertext
+    // }
+
+    function changeName(event)
+    {
+        headone.textContent = event.target.textContent
+    }
+
+
+    // task 4
+    // using object --> events -- remove() which helps in delete the text or value  easily   
+    function deleteItem(event){
+        event.target.remove()
+    }
+
+</script>
